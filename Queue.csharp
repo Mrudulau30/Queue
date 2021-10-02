@@ -1,0 +1,44 @@
+// Introduction to Queue
+// Queues are a type of container adaptors which operate in a first in first out (FIFO) type of arrangement. Elements are inserted at the back (end) and are deleted from the front. Queues use an encapsulated object of deque or list 
+// (sequential container class) as its underlying container, providing a specific set of member functions to access its elements.
+
+//Time Complexity
+//Queues follow the principle of first-in-last-out (stacks) and first-in-first-out (queues). However, for out-of-the-box JavaScript array methods, 
+//the time complexity for stacks is O(1) and the time complexity for queues is O(n).
+
+//Code for Insertion Operation in Queue
+using System;
+using System.Collections;
+  
+public class main {
+    static public void Main()
+    {
+  
+        // Create a queue
+        // Using Queue class
+        Queue my_queue = new Queue();
+  
+        // Adding elements in Queue
+        // Using Enqueue() method
+        my_queue.Enqueue("GFG");
+        my_queue.Enqueue(1);
+        my_queue.Enqueue(100);
+        my_queue.Enqueue(null);
+        my_queue.Enqueue(2.4);
+        my_queue.Enqueue("Geeks123");
+  
+        // Accessing the elements
+        // of my_queue Queue
+        // Using foreach loop
+        foreach(var ele in my_queue)
+        {
+            Console.WriteLine(ele);
+        }
+    }
+}
+
+//Explanation of Code
+//Step 1: Include System.Collections namespace in your program with the help of using keyword.
+//Step 2: Create an queue using Queue class as shown below:
+//Queue queue_name = new Queue();
+//Step 3: If you want to add elements in your queue then use Enqueue() method to add elements in your queue. As shown in the below example.
